@@ -34,7 +34,8 @@ public class Player : MonoBehaviour
 
         Vector3 direction = new Vector3(horizontalInput, 0, verticalInput);
 
-        if (controller.isGrounded) {
+        if (controller.isGrounded)
+        {
 
             canDoubleJump = true;
             if (Input.GetButtonDown("Jump"))
@@ -42,8 +43,9 @@ public class Player : MonoBehaviour
                 directionY = jumpSpeed;
             }
 
-             
-        } else
+
+        }
+        else
         {
             if (Input.GetButtonDown("Jump") && canDoubleJump)
             {
