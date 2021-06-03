@@ -4402,6 +4402,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502755313}
   m_CullTransparentMesh: 0
+--- !u!1 &1655028168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 802219649959215812, guid: ad71c69f6cb50f8489e56feafae4fdec,
+    type: 3}
+  m_PrefabInstance: {fileID: 802219648661447006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1655028171
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655028168}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 967fa768e307e644da3c558006452f9d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1681056328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5245,17 +5270,17 @@ PrefabInstance:
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.52
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.651
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
@@ -5296,6 +5321,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vacina
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649959215810, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_Range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649959215810, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad71c69f6cb50f8489e56feafae4fdec, type: 3}
