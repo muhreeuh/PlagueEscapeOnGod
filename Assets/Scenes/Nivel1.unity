@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+<<<<<<< Updated upstream
   m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+>>>>>>> Stashed changes
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5620,17 +5624,17 @@ PrefabInstance:
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7
+      value: 4.64
       objectReference: {fileID: 0}
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 26.18
       objectReference: {fileID: 0}
     - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
@@ -5681,6 +5685,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130812403547314410, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478411641100293569, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478411641100293569, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: MinDistance
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad71c69f6cb50f8489e56feafae4fdec, type: 3}
