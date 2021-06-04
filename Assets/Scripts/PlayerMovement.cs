@@ -56,39 +56,39 @@ public class PlayerMovement : MonoBehaviour
         }
 
         
-            if (jump == false)
+        if (jump == false)
             {
                 Animator.SetBool("jump", false);
             }
 
-            if (jump == true)
+        if (jump == true)
             {
                 Animator.SetBool("jump", true);
             }
 
             //RUN
-            if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
             {
                 run = true;
          
                
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow))
             {
                 run = true;
 
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
             {
                 run = true;
 
             }
-            else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
             {
                 run = true;
 
             }
-            else
+        else
             {
                 run = false;
        
@@ -106,7 +106,31 @@ public class PlayerMovement : MonoBehaviour
                 Animator.SetBool("run", true);
             }
 
+        //SHOOT
+        if (Input.GetKey(KeyCode.Z))
+        {
+            shoot = true;
+
         }
+
+        else
+        {
+            shoot = false;
+
+        }
+
+
+        if (shoot == false)
+        {
+            Animator.SetBool("shoot", false);
+        }
+
+        if (shoot == true)
+        {
+            Animator.SetBool("shoot", true);
+        }
+
+    }
 
         void OnTriggerEnter(Collider other)
         {
