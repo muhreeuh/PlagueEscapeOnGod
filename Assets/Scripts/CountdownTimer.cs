@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class CountdownTimer : MonoBehaviour
 {
     float currentTime = 000f;
@@ -23,6 +24,10 @@ public class CountdownTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
+
         }
+
     }
+
+    
 }
