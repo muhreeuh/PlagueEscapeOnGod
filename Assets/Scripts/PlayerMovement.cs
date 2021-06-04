@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+    [SerializeField]
+    GameObject objetoSonoro;
+
+    AudioSource somSalto;
 
     
 
@@ -49,14 +52,16 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             jump = true;
-            
+            somSalto = objetoSonoro.GetComponent<AudioSource>();
+            somSalto.Play();
         }
 
         else
         {
             jump = false;
-            
 
+            somSalto = objetoSonoro.GetComponent<AudioSource>();
+            somSalto.Stop();
 
         }
 
@@ -64,12 +69,14 @@ public class PlayerMovement : MonoBehaviour
         if (jump == false)
             {
                 Animator.SetBool("jump", false);
+            
             }
 
         if (jump == true)
             {
                 Animator.SetBool("jump", true);
-            }
+            
+        }
 
             //RUN
         if (Input.GetKey(KeyCode.UpArrow))

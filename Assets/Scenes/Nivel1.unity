@@ -2722,7 +2722,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c533803deac66d547a56bec94aaf6e3f, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2735,7 +2735,7 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
+  BypassEffects: 1
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
@@ -3453,12 +3453,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048654917}
   m_CullTransparentMesh: 0
---- !u!1 &1097225925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8823967742219433039, guid: e0423a16370664e4bafd2d9bdb62f1d0,
-    type: 3}
-  m_PrefabInstance: {fileID: 8553582781501788943}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1115230707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6016,7 +6010,7 @@ PrefabInstance:
     - target: {fileID: 432561503, guid: e0423a16370664e4bafd2d9bdb62f1d0, type: 3}
       propertyPath: objetoSonoro
       value: 
-      objectReference: {fileID: 1097225925}
+      objectReference: {fileID: 743121869}
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
       propertyPath: m_RootOrder
