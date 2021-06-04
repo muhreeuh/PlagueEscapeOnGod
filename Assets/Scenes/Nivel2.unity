@@ -4933,7 +4933,7 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
   m_Transitions:
     m_BlendHint: 0
-    m_InheritPosition: 0
+    m_InheritPosition: 1
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
@@ -4991,6 +4991,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 432561501, guid: e0423a16370664e4bafd2d9bdb62f1d0, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 432561502, guid: e0423a16370664e4bafd2d9bdb62f1d0, type: 3}
       propertyPath: m_Radius
       value: 0.2
