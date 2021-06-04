@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+ 
+
     [SerializeField] float velocidade = 4f;
     Vector3 frontal, lateral;
    
@@ -46,13 +48,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             jump = true;
+            
           
         }
 
         else
         {
             jump = false;
-           
+            
+
         }
 
         
