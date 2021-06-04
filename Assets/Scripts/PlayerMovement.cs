@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     
     Animator Animator;
     bool jump;
+    bool run;
+    bool shoot;
+  
+    
     void Start()
     {
         playerOriginalPosition = transform.position;
@@ -23,9 +27,12 @@ public class PlayerMovement : MonoBehaviour
 
         Animator = gameObject.GetComponent<Animator>();
         jump = false;
+        run = false;
+        shoot = false;
+    
     }
 
-    
+
     void Update()
     {
         Vector3 horizontal = lateral * velocidade * Time.deltaTime * Input.GetAxis("Horizontal");
@@ -35,37 +42,79 @@ public class PlayerMovement : MonoBehaviour
         transform.position += movimento;
         transform.LookAt(transform.position + movimento);
 
-        if(Input.GetKey(KeyCode.Space))
+        //JUMP
+        if (Input.GetKey(KeyCode.Space))
         {
             jump = true;
+       
         }
 
         else
         {
             jump = false;
+        
         }
 
-        if (jump == false)
-        {
-            Animator.SetBool("jump", false);
+        
+            if (jump == false)
+            {
+                Animator.SetBool("jump", false);
+            }
+
+            if (jump == true)
+            {
+                Animator.SetBool("jump", true);
+            }
+
+            //RUN
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                run = true;
+               
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                run = true;
+
+            }
+            else if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                run = true;
+
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                run = true;
+
+            }
+            else
+            {
+                run = false;
+       
+            }
+
+            
+        if (run == false)
+            {
+                Animator.SetBool("run", false);
+
+            }
+
+            if (run == true)
+            {
+                Animator.SetBool("run", true);
+            }
+
         }
 
-        if (jump == true)
+        void OnTriggerEnter(Collider other)
         {
-            Animator.SetBool("jump", true);
+            if (other.CompareTag("Respawn"))
+            {
+                transform.position = playerOriginalPosition;
+                transform.rotation = playerOriginalOrientation;
+            }
         }
+
 
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Respawn"))
-        {
-            transform.position = playerOriginalPosition;
-            transform.rotation = playerOriginalOrientation;
-        }
-    }
-
-
-
-}
