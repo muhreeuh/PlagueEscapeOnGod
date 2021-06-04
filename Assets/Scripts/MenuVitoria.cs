@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoNivel1 : MonoBehaviour
+public class MenuVitoria : MonoBehaviour
 {
-    public void EscolherNivel1()
+    public void LoadMenuVitoria()
     {
         SceneManager.LoadScene("Nivel1");
     }
 
+    
 }
