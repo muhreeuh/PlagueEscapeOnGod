@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 playerOriginalPosition;
     Quaternion playerOriginalOrientation; 
-
+    
+    Animator Animator;
+    bool jump;
     void Start()
     {
         playerOriginalPosition = transform.position;
@@ -18,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
         frontal = transform.forward;
         lateral = Quaternion.Euler(new Vector3(0, 90, 0)) * frontal;
+
+        Animator = gameObject.GetComponent<Animator>();
+        jump = false;
     }
 
     
@@ -30,6 +35,26 @@ public class PlayerMovement : MonoBehaviour
         transform.position += movimento;
         transform.LookAt(transform.position + movimento);
 
+        if(Input.GetKey(KeyCode.Space))
+        {
+            jump = true;
+        }
+
+        else
+        {
+            jump = false;
+        }
+
+        if (jump == false)
+        {
+            Animator.SetBool("jump", false);
+        }
+
+        if (jump == true)
+        {
+            Animator.SetBool("jump", true);
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,4 +65,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = playerOriginalOrientation;
         }
     }
+
+
+
 }
