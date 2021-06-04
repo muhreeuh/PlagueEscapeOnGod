@@ -143,7 +143,40 @@ public class PlayerMovement : MonoBehaviour
                 transform.position = playerOriginalPosition;
                 transform.rotation = playerOriginalOrientation;
             }
+
+            if (other.CompareTag("SoundTrigger1"))
+            {
+
+            other.GetComponent<AudioSource>().Play();
+
+            }
+
+            if (other.CompareTag("SoundTrigger2"))
+            {
+
+            other.GetComponent<AudioSource>().Play();
+
+            }
+
         }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("SoundTrigger1"))
+        {
 
+            other.GetComponent<AudioSource>().Stop();
+
+        }
+
+        if (other.CompareTag("SoundTrigger2"))
+        {
+
+            other.GetComponent<AudioSource>().Stop();
+
+        }
     }
+
+
+
+}
