@@ -6,6 +6,12 @@ using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
 {
+    public static bool JogoAcabou;
+
+    [SerializeField]
+    GameObject MenuGameOver;
+
+
     float currentTime = 000f;
     float startingTime = 180f;
 
@@ -14,6 +20,8 @@ public class CountdownTimer : MonoBehaviour
     void Start()
     {
         currentTime = startingTime;
+        MenuGameOver.SetActive(false);
+        JogoAcabou = true;
     }
 
     void Update()
@@ -24,10 +32,15 @@ public class CountdownTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
+            EndGame();
 
         }
 
     }
 
-    
+    public void EndGame()
+    {
+        MenuGameOver.SetActive(true);
+        JogoAcabou = true;
+    }
 }
