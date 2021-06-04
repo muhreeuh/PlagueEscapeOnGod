@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 4.02
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: f9be4bc4f6560364aa5f3146e1723fde, type: 2}
@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07659406, g: 0.10699556, b: 0.17871132, a: 1}
+  m_IndirectSpecularColor: {r: 0.076997645, g: 0.10699413, b: 0.17883727, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -3997,6 +3997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 592867339}
   - component: {fileID: 592867338}
+  - component: {fileID: 592867340}
   m_Layer: 0
   m_Name: CM ClearShot1
   m_TagString: Untagged
@@ -4063,6 +4064,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &592867340
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592867337}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: f9be4bc4f6560364aa5f3146e1723fde, type: 2}
 --- !u!43 &620042909
 Mesh:
   m_ObjectHideFlags: 0
@@ -6534,7 +6544,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.18039216, g: 0.21568628, b: 0.18431373, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -9464,6 +9474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1502492193}
+  - component: {fileID: 1502492194}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: Untagged
@@ -9486,6 +9497,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!45 &1502492194
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502492192}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: f9be4bc4f6560364aa5f3146e1723fde, type: 2}
 --- !u!1 &1513864643
 GameObject:
   m_ObjectHideFlags: 0
