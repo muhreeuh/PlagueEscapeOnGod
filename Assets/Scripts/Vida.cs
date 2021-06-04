@@ -8,4 +8,15 @@ public class Vida : MonoBehaviour
     {
         transform.Rotate(new Vector3(0, 0, 15) * Time.deltaTime * 3);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if(other.name =="Player")
+        {
+
+            Destroy(gameObject);
+        }
+
+    }
 }
