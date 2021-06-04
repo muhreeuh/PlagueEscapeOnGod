@@ -5,16 +5,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-   [SerializeField] float velocidade = 4f;
+    [SerializeField] float velocidade = 4f;
     Vector3 frontal, lateral;
-
+   
     Vector3 playerOriginalPosition;
     Quaternion playerOriginalOrientation; 
     
     Animator Animator;
-    bool jump;
-    bool run;
-    bool shoot;
+    public bool jump;
+    public bool run;
+    public bool shoot;
   
     
     void Start()
@@ -46,13 +46,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             jump = true;
-       
+          
         }
 
         else
         {
             jump = false;
-        
+           
         }
 
         
@@ -70,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 run = true;
+         
                
             }
             else if (Input.GetKey(KeyCode.DownArrow))
