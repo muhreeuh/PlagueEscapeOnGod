@@ -166,7 +166,13 @@ public class PlayerMovement : MonoBehaviour
 
             }
 
+        if (other.CompareTag("SoundTrigger3"))
+        {
+
+            other.GetComponent<AudioSource>().Play();
+
         }
+    }
 
     private void OnTriggerExit(Collider other)
     {
@@ -183,6 +189,14 @@ public class PlayerMovement : MonoBehaviour
             other.GetComponent<AudioSource>().Stop();
 
         }
+
+        if (other.CompareTag("SoundTrigger3"))
+        {
+
+            other.GetComponent<AudioSource>().Stop();
+
+        }
+
     }
 
 
