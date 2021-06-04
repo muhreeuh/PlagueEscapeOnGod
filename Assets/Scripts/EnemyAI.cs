@@ -1,35 +1,57 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour {
-
-    float speed;
-    float stoppingDistance;
-    float retreatDistance;
+public class EnemyAI : MonoBehaviour
+{
+    public NavMeshAgent;
 
     public Transform player;
 
-    // Start is called before the first frame update
-    void Start()
+    public LayerMask whatIsGround, whatIsPlayer;
+
+
+    public Vector3 walkPoint
+    bool walkPointSet;
+    public float walkPointRange;
+
+
+    public float timeBetweenAttacks;
+    bool alreadyAttacked;
+
+
+    public float sightRange, attackRange;
+    public bool playerInSightRange, playerInAttackRange;
+
+    private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("player").transform;
+        player = GameObject.Find("Player").transform;
+        Agent = GetComponent<NavMeshAgent>();
+    }
+
+    private void Update()
+    {
+        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        playerIAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+
+        if (!playerInSightRange && !playerInAttackRange) Patroling();
+    }
+
+    private void Patroling()
+    {
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ChasePlayer()
     {
-        if(Vector3.Distance(transform.position,player.position)> stoppingDistance)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-        } else if (Vector3.Distance(transform.position, player.position) < stoppingDistance && Vector3.Distance(transform.position, player.position) > retreatDistance)
-        {
-            transform.position = this.transform.position;
-        }   else if(Vector3.Distance(transform.position, player.position)< retreatDistance){
-
-            transform.position = Vector3.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
-        }
 
     }
+
+    private void AttackPlayer()
+    {
+
+    }
+
+
 }
