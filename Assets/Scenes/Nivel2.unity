@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,6 +121,130 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &39850283
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 61.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584646, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649910584648, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_Name
+      value: Vacina
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649959215810, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_Range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 802219649959215810, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130812403547314410, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_Radius
+      value: 5.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478411641100293569, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 12.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478411641100293569, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: MinDistance
+      value: 2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6887056656362860812, guid: ad71c69f6cb50f8489e56feafae4fdec,
+        type: 3}
+      propertyPath: m_TagString
+      value: SoundTrigger1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad71c69f6cb50f8489e56feafae4fdec, type: 3}
+--- !u!1 &39850284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 802219649959215812, guid: ad71c69f6cb50f8489e56feafae4fdec,
+    type: 3}
+  m_PrefabInstance: {fileID: 39850283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &39850285
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39850284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 967fa768e307e644da3c558006452f9d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!43 &52649200
 Mesh:
   m_ObjectHideFlags: 0
