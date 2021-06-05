@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerMovement : MonoBehaviour
 {
+
     [SerializeField]
-    GameObject objetoSonoro;
+    private AudioClip somSalto;
 
-    AudioSource somSalto;
+    [SerializeField]
+    private AudioClip somAndar;
 
+    [SerializeField]
+    private AudioClip somShoot;
+
+    private AudioSource som;
     
 
     [SerializeField] float velocidade = 4f;
@@ -35,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         jump = false;
         run = false;
         shoot = false;
+
+        som = GetComponent<AudioSource>();
     
     }
 
@@ -51,40 +60,38 @@ public class PlayerMovement : MonoBehaviour
         //JUMP
         if (Input.GetKey(KeyCode.Space))
         {
+            som.clip = somSalto;
+            if (!som.isPlaying) som.Play();
             jump = true;
-            somSalto = objetoSonoro.GetComponent<AudioSource>();
-            somSalto.Play();
+            
         }
 
         else
         {
+            som.Stop();
             jump = false;
-
-            somSalto = objetoSonoro.GetComponent<AudioSource>();
-            somSalto.Stop();
-
+            
         }
 
         
         if (jump == false)
             {
                 Animator.SetBool("jump", false);
-            
-            }
+
+        }
 
         if (jump == true)
             {
                 Animator.SetBool("jump", true);
-            
         }
 
             //RUN
         if (Input.GetKey(KeyCode.UpArrow))
             {
                 run = true;
-         
-               
-            }
+           
+
+        }
         else if (Input.GetKey(KeyCode.DownArrow))
             {
                 run = true;
@@ -103,32 +110,35 @@ public class PlayerMovement : MonoBehaviour
         else
             {
                 run = false;
-       
-            }
+            
+
+        }
 
             
         if (run == false)
             {
                 Animator.SetBool("run", false);
-
-            }
+         
+        }
 
             if (run == true)
             {
                 Animator.SetBool("run", true);
-            }
+            
+        }
 
         //SHOOT
         if (Input.GetKey(KeyCode.Z))
         {
             shoot = true;
-
+            som.clip = somShoot;
+            if (!som.isPlaying) som.Play();
         }
 
         else
         {
             shoot = false;
-
+            som.Stop();
         }
 
 
