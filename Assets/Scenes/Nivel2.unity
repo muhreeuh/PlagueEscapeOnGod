@@ -147,16 +147,25 @@ LightProbeGroup:
   m_GameObject: {fileID: 38889456}
   m_Enabled: 1
   m_SourcePositions:
-  - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: -1}
-  - {x: 1, y: -1, z: 1}
-  - {x: 1, y: -1, z: -1}
-  - {x: -1, y: 1, z: 1}
-  - {x: -1, y: 1, z: -1}
-  - {x: -1, y: -1, z: 1}
-  - {x: -1, y: -1, z: -1}
+  - {x: 0.028957032, y: 0.63789123, z: 0.37759402}
+  - {x: 0.026481658, y: 0.60512006, z: -0.45265633}
+  - {x: 0.028957032, y: -1.3218987, z: 0.37759402}
+  - {x: 0.026481658, y: -1.3301553, z: -0.46023706}
+  - {x: -1, y: 0.63055, z: 0.37909305}
+  - {x: -1, y: 0.6289021, z: -0.4495443}
+  - {x: -1, y: -1.2956616, z: 0.37909305}
+  - {x: -1, y: -1.3164387, z: -0.4495443}
   - {x: -1.6207817, y: -9.51187, z: -5.965081}
+  - {x: -1, y: -1.3164387, z: -0.4495443}
+  - {x: -1, y: 1, z: -1}
   - {x: -1, y: -1, z: -1}
+  - {x: -1, y: -1, z: -1}
+  - {x: -1, y: 1, z: 1}
+  - {x: -1, y: -1, z: 1}
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: -1, z: 1}
+  - {x: 1, y: 1, z: -1}
+  - {x: 1, y: -1, z: -1}
   m_Dering: 1
 --- !u!4 &38889458
 Transform:
@@ -4425,7 +4434,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18504
+  m_Name: pb_Mesh18502
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12543,7 +12552,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18376
+  m_Name: pb_Mesh18368
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
