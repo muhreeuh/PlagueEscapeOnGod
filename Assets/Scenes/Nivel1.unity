@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.076997645, g: 0.10699413, b: 0.17883727, a: 1}
+  m_IndirectSpecularColor: {r: 0.07659406, g: 0.10699556, b: 0.17871132, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1052,7 +1052,7 @@ RectTransform:
   m_Children:
   - {fileID: 1302668665}
   m_Father: {fileID: 1115230711}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4708,7 +4708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab69c19a717c4e44faa722982a31dfd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuGameOver: {fileID: 1296879141}
+  MenuVitoria: {fileID: 1296879141}
 --- !u!1 &1102086373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4861,7 +4861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1115230708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4934,6 +4934,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 165262290}
+  - {fileID: 1296879142}
   - {fileID: 2043092320}
   - {fileID: 229542134}
   m_Father: {fileID: 0}
@@ -5833,8 +5834,8 @@ Transform:
   - {fileID: 2091712344}
   - {fileID: 7588662}
   - {fileID: 1343037385}
-  m_Father: {fileID: 1652738628}
-  m_RootOrder: 2
+  m_Father: {fileID: 1115230711}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302668664
 GameObject:
@@ -7734,7 +7735,6 @@ RectTransform:
   m_Children:
   - {fileID: 911523704}
   - {fileID: 1781250417}
-  - {fileID: 1296879142}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9079,7 +9079,7 @@ RectTransform:
   - {fileID: 2039231774}
   - {fileID: 1199845991}
   m_Father: {fileID: 1115230711}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

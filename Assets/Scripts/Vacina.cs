@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Vacina : MonoBehaviour
 {
-    public static bool JogoAcabou;
+    public static bool GanhouJogo;
 
     [SerializeField]
-    GameObject MenuGameOver;
+    GameObject MenuVitoria;
 
 
     void Start()
     {
         
-        MenuGameOver.SetActive(false);
-        JogoAcabou = true;
+        MenuVitoria.SetActive(false);
+        GanhouJogo = true;
     }
 
 
@@ -26,14 +26,18 @@ public class Vacina : MonoBehaviour
         if (other.name == "Player")
         {
 
-            EndGame();
+            Ganhar();
         }
 
-        void EndGame()
-        {
-            MenuGameOver.SetActive(true);
-            JogoAcabou = true;
+      
+    }
 
-        }
+    public void Ganhar()
+    {
+        
+            MenuVitoria.SetActive(true);
+            GanhouJogo = true;
+
+        
     }
 }
