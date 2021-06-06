@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private AudioClip somShoot;
 
+    [SerializeField]
+    GameObject fire;
+
     private AudioSource som;
     
 
@@ -28,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     public bool jump;
     public bool run;
     public bool shoot;
-  
+
     
     void Start()
     {
@@ -46,7 +49,6 @@ public class PlayerMovement : MonoBehaviour
         som = GetComponent<AudioSource>();
     
     }
-
 
     void Update()
     {
@@ -130,6 +132,8 @@ public class PlayerMovement : MonoBehaviour
         //SHOOT
         if (Input.GetKey(KeyCode.Z))
         {
+            Instantiate(fire, transform);
+
             shoot = true;
             som.clip = somShoot;
             if (!som.isPlaying) som.Play();
