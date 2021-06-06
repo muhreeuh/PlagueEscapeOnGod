@@ -12,7 +12,6 @@ public class Vacina : MonoBehaviour
 
     void Start()
     {
-        
         MenuVitoria.SetActive(false);
         GanhouJogo = true;
     }
