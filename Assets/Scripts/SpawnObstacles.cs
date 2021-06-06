@@ -5,8 +5,8 @@ using UnityEngine;
 public class SpawnObstacles : MonoBehaviour
 {
 
-    [SerializeField] Transform coordinates;
-    [SerializeField] GameObject life;
+    [SerializeField] Transform[] coordinates = new Transform[6];
+    [SerializeField] GameObject obstacle;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,6 @@ public class SpawnObstacles : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        Instantiate(life, coordinates.position, Quaternion.identity);
+        
     }
 }
