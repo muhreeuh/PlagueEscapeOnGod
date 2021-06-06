@@ -4,8 +4,36 @@ using UnityEngine;
 
 public class Vacina : MonoBehaviour
 {
-    void Update()
+    public static bool JogoAcabou;
+
+    [SerializeField]
+    GameObject MenuGameOver;
+
+
+    void Start()
     {
-        transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);
+        
+        MenuGameOver.SetActive(false);
+        JogoAcabou = true;
+    }
+
+
+  
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.name == "Player")
+        {
+
+            EndGame();
+        }
+
+        void EndGame()
+        {
+            MenuGameOver.SetActive(true);
+            JogoAcabou = true;
+
+        }
     }
 }
