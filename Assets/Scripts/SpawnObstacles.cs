@@ -23,4 +23,13 @@ public class SpawnObstacles : MonoBehaviour
     {
         Instantiate(life, coordinates.position, Quaternion.identity);
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+
+        }
+    }
 }
