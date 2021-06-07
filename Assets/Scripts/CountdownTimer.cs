@@ -10,7 +10,7 @@ public class CountdownTimer : MonoBehaviour
 
     [SerializeField]
     GameObject MenuGameOver;
-    static countdown _instance;
+
   
 
     public float currentTime = 000f;
@@ -39,16 +39,7 @@ public class CountdownTimer : MonoBehaviour
         }
 
 
-        void Awake()
-        {
-
-            _instance = this;
-        }
-
-         static void ModifyTimer(float byAmount)
-        {
-            _instance.timer += byAmount;
-        }
+      
     }
 
     public void EndGame()

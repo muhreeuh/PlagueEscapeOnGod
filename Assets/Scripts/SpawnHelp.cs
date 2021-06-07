@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class SpawnHelp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Transform coordinate;
+    [SerializeField] Rigidbody help;
+    void OnTriggerEnter()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Rigidbody rigidHelp;
+        rigidHelp = Instantiate(help, coordinate.position, Quaternion.identity) as Rigidbody;
     }
 }
