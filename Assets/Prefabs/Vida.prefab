@@ -262,6 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8452418728297983241}
+  - component: {fileID: 1842306051355608993}
   m_Layer: 0
   m_Name: Vida
   m_TagString: Untagged
@@ -286,6 +287,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1842306051355608993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452418728297983240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82abb59d4dd26d74a9fed6225c8f1989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuGameOver: {fileID: 0}
 --- !u!1001 &4689826474577966943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,7 +377,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: heart
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1250937991992945256, guid: fb4b5874fb5bb954f808dc1a7f9c6313, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb4b5874fb5bb954f808dc1a7f9c6313, type: 3}
 --- !u!4 &8270789736250529183 stripped
 Transform:
