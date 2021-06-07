@@ -4,39 +4,20 @@ using UnityEngine;
 
 public class VidaScript : MonoBehaviour
 {
-
-    public static bool JogoAcabou;
-
-    [SerializeField]
-    GameObject MenuGameOver;
-
-
-    float currentTime = 000f;
-    float startingTime = 180f;
-
-    [SerializeField] Text countdownText;
-
-    void Start()
-    {
-        currentTime = startingTime;
-        MenuGameOver.SetActive(false);
-        JogoAcabou = true;
-    }
-
-
     void Update()
     {
         transform.Rotate(new Vector3(0, 0, 45) * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-
-        if (other.name == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
-
             Destroy(gameObject);
-        }
 
+            float currentTime;
+            currentTime = GameObject.Find("CountdownText").GetComponent<CountdownTimer>().currentTime;
+            currentTime -= 1 * Time.deltaTime + 10f;
+        }
     }
 }

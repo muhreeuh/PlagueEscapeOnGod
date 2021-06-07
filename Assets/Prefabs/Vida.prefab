@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 8452418726444336086}
   m_Layer: 0
   m_Name: VidaLuz
-  m_TagString: Untagged
+  m_TagString: Life
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,9 +262,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8452418728297983241}
+  - component: {fileID: 5584610855747016755}
+  - component: {fileID: 7317944289423745555}
   m_Layer: 0
   m_Name: Vida
-  m_TagString: Untagged
+  m_TagString: Life
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,19 +288,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4658718740721995073
+--- !u!114 &5584610855747016755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8758498371575516965}
+  m_GameObject: {fileID: 8452418728297983240}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82abb59d4dd26d74a9fed6225c8f1989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuGameOver: {fileID: 0}
+--- !u!65 &7317944289423745555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452418728297983240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &4689826474577966943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -384,12 +398,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1250937991992945256, guid: fb4b5874fb5bb954f808dc1a7f9c6313, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb4b5874fb5bb954f808dc1a7f9c6313, type: 3}
---- !u!1 &8758498371575516965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4078558711472830586, guid: fb4b5874fb5bb954f808dc1a7f9c6313,
-    type: 3}
-  m_PrefabInstance: {fileID: 4689826474577966943}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8270789736250529183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3734085684514382528, guid: fb4b5874fb5bb954f808dc1a7f9c6313,

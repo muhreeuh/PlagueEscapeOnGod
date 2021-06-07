@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class PlayerMovement : MonoBehaviour
 {
 
+    
     [SerializeField]
     private AudioClip somSalto;
 
@@ -35,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {
+       
+
         playerOriginalPosition = transform.position;
         playerOriginalOrientation = transform.rotation;
 
@@ -52,6 +56,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        
+
         Vector3 horizontal = lateral * velocidade * Time.deltaTime * Input.GetAxis("Horizontal");
         Vector3 vertical = frontal * velocidade * Time.deltaTime * Input.GetAxis("Vertical");
 
@@ -186,6 +192,8 @@ public class PlayerMovement : MonoBehaviour
             other.GetComponent<AudioSource>().Play();
 
         }
+
+      
     }
 
     private void OnTriggerExit(Collider other)

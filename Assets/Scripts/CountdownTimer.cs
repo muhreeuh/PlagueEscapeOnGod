@@ -12,7 +12,7 @@ public class CountdownTimer : MonoBehaviour
     GameObject MenuGameOver;
 
 
-    float currentTime = 000f;
+    public float currentTime = 000f;
     float startingTime = 180f;
 
     [SerializeField] Text countdownText;

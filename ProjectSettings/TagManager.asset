@@ -8,6 +8,7 @@ TagManager:
   - SoundTrigger2
   - SoundTrigger3
   - Life
+  - Timer
   layers:
   - Default
   - TransparentFX
