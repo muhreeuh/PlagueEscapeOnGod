@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.076997645, g: 0.10699413, b: 0.17883727, a: 1}
+  m_IndirectSpecularColor: {r: 0.07659406, g: 0.10699556, b: 0.17871132, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1767,7 +1767,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 59d8a116e863143f2b2227d592130864, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.351
+  m_Volume: 0.067
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1786,7 +1786,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.30959752
+      time: 0.09531072
       value: 1
       inSlope: -3.231287
       outSlope: -3.231287
@@ -2320,7 +2320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495379249}
   m_LocalRotation: {x: 0.10726216, y: 0, z: 0, w: 0.9942308}
-  m_LocalPosition: {x: 0.135, y: 0.699, z: 34.364002}
+  m_LocalPosition: {x: -0.027, y: 0.539, z: 34.399002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 106342281}
@@ -3971,7 +3971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.10726216, y: 0, z: 0, w: 0.9942308}
-  m_LocalPosition: {x: 0.135, y: 0.699, z: 34.364002}
+  m_LocalPosition: {x: -0.027, y: 0.539, z: 34.399002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8645,7 +8645,7 @@ PrefabInstance:
     - target: {fileID: 5478411641100293569, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
       propertyPath: m_Volume
-      value: 0.16
+      value: 0.067
       objectReference: {fileID: 0}
     - target: {fileID: 5478411641100293569, guid: ad71c69f6cb50f8489e56feafae4fdec,
         type: 3}
@@ -8832,17 +8832,17 @@ PrefabInstance:
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.135
+      value: -0.027
       objectReference: {fileID: 0}
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.159
+      value: -0.001
       objectReference: {fileID: 0}
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.004
+      value: 35.039
       objectReference: {fileID: 0}
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
