@@ -18,7 +18,10 @@ public class PlayerMovement : MonoBehaviour
     private AudioClip somShoot;
 
     [SerializeField]
-    GameObject fire;
+    Rigidbody Fire;
+
+    [SerializeField]
+    float force = 100f;
 
     private AudioSource som;
     
@@ -138,7 +141,8 @@ public class PlayerMovement : MonoBehaviour
         //SHOOT
         if (Input.GetKey(KeyCode.Z))
         {
-            Instantiate(fire, transform);
+            Rigidbody instantiatedFire = Instantiate(Fire, transform.position, transform.rotation) as Rigidbody;
+            instantiatedFire.velocity = transform.TransformDirection(new Vector3(0, 0, force));
 
             shoot = true;
             som.clip = somShoot;
