@@ -14,10 +14,9 @@ public class VidaScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-
-            float currentTime;
-            currentTime = GameObject.Find("CountdownText").GetComponent<CountdownTimer>().currentTime;
-            currentTime -= 1 * Time.deltaTime + 10f;
+            
         }
     }
+
+  
 }

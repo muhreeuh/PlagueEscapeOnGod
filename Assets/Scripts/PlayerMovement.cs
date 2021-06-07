@@ -193,7 +193,13 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-      
+        if (other.CompareTag("Life"))
+        {
+            Destroy(other.gameObject);
+
+
+            
+        }
     }
 
     private void OnTriggerExit(Collider other)
