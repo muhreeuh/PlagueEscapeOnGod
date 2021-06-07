@@ -7,10 +7,12 @@ public class Fire : MonoBehaviour
 
     [SerializeField]
     float force = 100f;
-    
+
+ 
+
     void Start()
     {
-        GetComponent<Rigidbody>().AddForce(Vector3.up * force);
+        GetComponent<Rigidbody>().AddForce(Vector3.forward * force);
     }
 
 }
