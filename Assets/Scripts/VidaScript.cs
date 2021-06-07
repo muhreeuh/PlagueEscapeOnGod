@@ -4,11 +4,24 @@ using UnityEngine;
 
 public class VidaScript : MonoBehaviour
 {
-  
+
     public static bool JogoAcabou;
 
     [SerializeField]
     GameObject MenuGameOver;
+
+
+    float currentTime = 000f;
+    float startingTime = 180f;
+
+    [SerializeField] Text countdownText;
+
+    void Start()
+    {
+        currentTime = startingTime;
+        MenuGameOver.SetActive(false);
+        JogoAcabou = true;
+    }
 
 
     void Update()

@@ -7,6 +7,7 @@ TagManager:
   - SoundTrigger1
   - SoundTrigger2
   - SoundTrigger3
+  - Life
   layers:
   - Default
   - TransparentFX
