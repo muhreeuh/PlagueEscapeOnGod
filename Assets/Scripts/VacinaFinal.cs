@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class VacinaFinal : MonoBehaviour
 {
-    
+    public static bool FinalNivel2;
+
+    [SerializeField]
+    GameObject MenuFinal;
 
 
-
+    private void Start()
+    {
+        MenuFinal.SetActive(false);
+        FinalNivel2 = true;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,8 +32,8 @@ public class VacinaFinal : MonoBehaviour
     public void CreditosFinais()
     {
 
-        SceneManager.LoadScene("Menu_Creditos");
-
+        MenuFinal.SetActive(true);
+        FinalNivel2 = true;
 
     }
 }
