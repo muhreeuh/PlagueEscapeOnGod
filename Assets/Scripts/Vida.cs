@@ -20,7 +20,7 @@ public class Vida : MonoBehaviour
 
         if(other.name =="Player")
         {
-            
+            CountdownTimer.adicionar = 30f;
             Destroy(gameObject);
         }
 
