@@ -8,14 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     
-    [SerializeField]
-    private AudioClip somSalto;
-
-    [SerializeField]
-    private AudioClip somAndar;
-
-    [SerializeField]
-    private AudioClip somShoot;
+  
 
     [SerializeField]
     Rigidbody Fire;
@@ -23,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     float force = 100f;
 
-    private AudioSource som;
+   
     
 
     [SerializeField] float velocidade = 4f;
@@ -53,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         run = false;
         shoot = false;
 
-        som = GetComponent<AudioSource>();
+        
     
     }
 
@@ -71,15 +64,15 @@ public class PlayerMovement : MonoBehaviour
         //JUMP
         if (Input.GetKey(KeyCode.Space))
         {
-            som.clip = somSalto;
-            if (!som.isPlaying) som.Play();
+            
             jump = true;
+ 
             
         }
 
         else
         {
-            som.Stop();
+           
             jump = false;
             
         }
@@ -145,14 +138,13 @@ public class PlayerMovement : MonoBehaviour
             instantiatedFire.velocity = transform.TransformDirection(new Vector3(0, 0, force));
 
             shoot = true;
-            som.clip = somShoot;
-            if (!som.isPlaying) som.Play();
+           
         }
 
         else
         {
             shoot = false;
-            som.Stop();
+            
         }
 
 
