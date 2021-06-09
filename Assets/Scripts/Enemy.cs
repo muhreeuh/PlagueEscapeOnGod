@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter(Collision Fire)
     {
         Destroy(gameObject);
+        ApanhadoPorBacteria();
     }
 
     public void ApanhadoPorBacteria()
