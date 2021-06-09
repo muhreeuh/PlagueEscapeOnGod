@@ -16,10 +16,7 @@ public class Vacina : MonoBehaviour
         GanhouJogo = true;
     }
 
-    void Update()
-    {
-        transform.Rotate(new Vector3(0, 0, 15) * Time.deltaTime * 3);
-    }
+
 
 
     private void OnTriggerEnter(Collider other)
