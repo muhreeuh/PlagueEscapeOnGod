@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.076997645, g: 0.10699413, b: 0.17883727, a: 1}
+  m_IndirectSpecularColor: {r: 0.07659406, g: 0.10699556, b: 0.17871132, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14910,7 +14910,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.071690656, y: 0.7104794, z: -0.073158585, w: 0.6962236}
+  m_LocalRotation: {x: 0.071690656, y: 0.71047944, z: -0.073158585, w: 0.6962237}
   m_LocalPosition: {x: -91.696, y: 9.118, z: -55.100014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -21148,7 +21148,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1274763734}
   - component: {fileID: 1274763736}
-  - component: {fileID: 1274763735}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -21170,28 +21169,6 @@ Transform:
   m_Father: {fileID: 1318423310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1274763735
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274763733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_AngularDampingMode: 0
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
-  m_AngularDamping: 0
 --- !u!114 &1274763736
 MonoBehaviour:
   m_ObjectHideFlags: 3
