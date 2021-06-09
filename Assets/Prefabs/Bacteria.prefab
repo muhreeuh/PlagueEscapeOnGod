@@ -1,5 +1,69 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!54 &8330900488338830874
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205954554445252215}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!136 &8709180973719386176
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205954554445252215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20443779
+  m_Height: 0.5742804
+  m_Direction: 1
+  m_Center: {x: -0.32026237, y: 0.21285981, z: -0.31195408}
+--- !u!195 &6322327141328717228
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205954554445252215}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4455507241354136484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205954554445252215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c194dbcc5bedd48b6eee9281fabf70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7548552687610788646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,7 +144,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 173865af618abaf42935d50ee2b014f8,
         type: 3}
       propertyPath: m_Name
-      value: bacteriaenemy
+      value: Bacteria
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 173865af618abaf42935d50ee2b014f8,
         type: 3}
@@ -94,3 +158,9 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 4f502eecc8da78946867007e348c3dc7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 173865af618abaf42935d50ee2b014f8, type: 3}
+--- !u!1 &7205954554445252215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 173865af618abaf42935d50ee2b014f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 7548552687610788646}
+  m_PrefabAsset: {fileID: 0}
