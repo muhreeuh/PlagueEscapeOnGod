@@ -3905,6 +3905,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 4f502eecc8da78946867007e348c3dc7, type: 2}
+    - target: {fileID: 4455507241354136484, guid: 7c270ef18e76d904b852b3ca8041c233,
+        type: 3}
+      propertyPath: MenuGameOver
+      value: 
+      objectReference: {fileID: 229269400}
     - target: {fileID: 5555031195447264915, guid: 7c270ef18e76d904b852b3ca8041c233,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -27751,6 +27756,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 4f502eecc8da78946867007e348c3dc7, type: 2}
+    - target: {fileID: 4455507241354136484, guid: 7c270ef18e76d904b852b3ca8041c233,
+        type: 3}
+      propertyPath: MenuGameOver
+      value: 
+      objectReference: {fileID: 229269400}
     - target: {fileID: 5555031195447264915, guid: 7c270ef18e76d904b852b3ca8041c233,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -30552,6 +30562,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 4f502eecc8da78946867007e348c3dc7, type: 2}
+    - target: {fileID: 4455507241354136484, guid: 7c270ef18e76d904b852b3ca8041c233,
+        type: 3}
+      propertyPath: MenuGameOver
+      value: 
+      objectReference: {fileID: 229269400}
     - target: {fileID: 5555031195447264915, guid: 7c270ef18e76d904b852b3ca8041c233,
         type: 3}
       propertyPath: m_LocalRotation.w

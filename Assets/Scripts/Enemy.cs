@@ -29,12 +29,22 @@ public class Enemy : MonoBehaviour
         agente.destination = alvo.position;
     }
 
-    private void OnCollisionEnter(Collision Fire)
+    private void OnCollisionEnter(Collision other)
     {
         Destroy(gameObject);
-        ApanhadoPorBacteria();
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+            ApanhadoPorBacteria();
+        }
+
     }
 
+
+    
+
+  
     public void ApanhadoPorBacteria()
     {
 
