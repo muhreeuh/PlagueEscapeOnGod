@@ -8,12 +8,19 @@ public class Enemy : MonoBehaviour
     NavMeshAgent agente;
     Transform alvo;
 
+    [SerializeField]
+    GameObject MenuGameOver;
+
+    public static bool bacteriaApanhada;
+
 
     // Start is called before the first frame update
     void Start()
     {
         agente = GetComponent<NavMeshAgent>();
         alvo = GameObject.FindGameObjectWithTag("Player").transform;
+        MenuGameOver.SetActive(false);
+        bacteriaApanhada = true;
     }
 
     // Update is called once per frame
@@ -27,4 +34,11 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-}
+    public void ApanhadoPorBacteria()
+    {
+
+      MenuGameOver.SetActive(true);
+            bacteriaApanhada = true;
+    }
+
+} 
