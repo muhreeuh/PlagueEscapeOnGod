@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.076997645, g: 0.10699413, b: 0.17883727, a: 1}
+  m_IndirectSpecularColor: {r: 0.07659406, g: 0.10699556, b: 0.17871132, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2355,7 +2355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 466.1, y: 280.2}
+  m_AnchoredPosition: {x: 723, y: 415}
   m_SizeDelta: {x: 1742, y: 914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &229269402
@@ -3735,7 +3735,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1915491413}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -3789,7 +3789,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1263808831}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -3800,7 +3800,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1365354267}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -13485,17 +13485,17 @@ PrefabInstance:
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.83
+      value: 4.896
       objectReference: {fileID: 0}
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 1.892
       objectReference: {fileID: 0}
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 135.7
+      value: 137.416
       objectReference: {fileID: 0}
     - target: {fileID: 8160196268791885557, guid: e0423a16370664e4bafd2d9bdb62f1d0,
         type: 3}
@@ -15268,8 +15268,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.12944596, y: -0.361189, z: 0.051613804, w: 0.9220208}
-  m_LocalPosition: {x: -77.5, y: 9.64, z: -56.700016}
+  m_LocalRotation: {x: 0.0716906, y: 0.71047944, z: -0.073158525, w: 0.6962237}
+  m_LocalPosition: {x: -91.696, y: 9.022, z: -55.074017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1502492193}
@@ -15710,6 +15710,49 @@ Transform:
   - {fileID: 1544720243}
   m_Father: {fileID: 0}
   m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1033827817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1033827819}
+  - component: {fileID: 1033827818}
+  m_Layer: 0
+  m_Name: PlayAgain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1033827818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033827817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594f3d12b77f949388ae7cb549c26a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1033827819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033827817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 935.7538, y: 535.5276, z: 32.45646}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048654917
 GameObject:
@@ -32232,7 +32275,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8d932f064e8604680a325dded07ece7f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.131
+  m_Volume: 0.185
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -32540,8 +32583,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868950764}
-  m_LocalRotation: {x: -0.0010379836, y: 0.9946893, z: -0.10242388, w: -0.010080375}
-  m_LocalPosition: {x: 1.5600002, y: 2.5300002, z: 17.319992}
+  m_LocalRotation: {x: -0.0010379826, y: 0.9946893, z: -0.10242379, w: -0.010080375}
+  m_LocalPosition: {x: 1.6260002, y: 2.822, z: 19.035995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1214570815}
@@ -37272,7 +37315,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1915491413}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -37326,7 +37369,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1033827818}
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -37337,7 +37380,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1365354267}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
