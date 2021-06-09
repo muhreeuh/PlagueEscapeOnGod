@@ -21,4 +21,10 @@ public class Enemy : MonoBehaviour
     {
         agente.destination = alvo.position;
     }
+
+    private void OnCollisionEnter(Collision Fire)
+    {
+        Destroy(gameObject);
+    }
+
 }
