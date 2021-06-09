@@ -30,6 +30,18 @@ CapsuleCollider:
   m_Height: 0.5742804
   m_Direction: 1
   m_Center: {x: -0.32026237, y: 0.21285981, z: -0.31195408}
+--- !u!114 &4455507241354136484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205954554445252215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c194dbcc5bedd48b6eee9281fabf70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!195 &6322327141328717228
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -52,7 +64,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4455507241354136484
+--- !u!114 &7222795131962528612
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,7 +73,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7205954554445252215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c194dbcc5bedd48b6eee9281fabf70, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fc6dcdd591d4094db3c4007da54858e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &7548552687610788646
